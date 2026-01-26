@@ -81,6 +81,36 @@ All notable changes to the Arckie Jadulco Portfolio project will be documented i
 
 ---
 
+### Phase 3: Reusable UI Components
+
+#### Added
+- **`app/components/ui/SkillCard.vue`** - Skill display card
+  - Props: name, icon, level (expert/advanced/intermediate)
+  - 3-bar level indicator
+  - Hover border and shadow effects
+
+- **`app/components/ui/ProjectCard.vue`** - Project showcase card
+  - Props: title, description, tags[], image, demoUrl, repoUrl, featured
+  - Aspect-ratio image area with placeholder
+  - Hover overlay with demo/repo link buttons
+  - "Featured" badge for highlighted projects
+  - Spans 2 columns when featured
+
+- **`app/components/ui/TimelineItem.vue`** - Experience timeline entry
+  - Props: title, company, period, description, technologies[], isLast
+  - Vertical timeline with connecting line
+  - Dot indicator with accent border
+  - Period badge and technology tags
+
+- **`app/components/ui/BlogCard.vue`** - Blog post preview card
+  - Props: title, description, date, slug, readingTime, tags[]
+  - Formatted date display
+  - 2-line clamped description
+  - Tags with # prefix
+  - "Read article" indicator on hover
+
+---
+
 ## Notes for Reviewer
 
 ### Suggested Commit Messages (in order)
@@ -103,4 +133,14 @@ feat: add base layout with header, footer, and mobile navigation
 - Add fixed header with scroll blur effect
 - Add full-screen mobile menu with keyboard support
 - Add footer with social links
+```
+
+**Phase 3:**
+```
+feat: add reusable UI components
+
+- Add SkillCard with level indicator
+- Add ProjectCard with hover overlay and featured badge
+- Add TimelineItem for experience section
+- Add BlogCard with formatted date and tags
 ```
