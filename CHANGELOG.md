@@ -194,6 +194,27 @@ All notable changes to the Arckie Jadulco Portfolio project will be documented i
 
 ---
 
+### Phase 6: Polish and Optimization
+
+#### Added
+- **`app/plugins/scroll-reveal.client.ts`** - Scroll reveal animations
+  - IntersectionObserver-based reveal
+  - Adds `.is-visible` class on scroll
+  - Re-observes on route changes
+
+- **`public/resume.pdf`** - Placeholder resume file
+
+#### Modified
+- **`nuxt.config.ts`**
+  - Added page transitions (`name: 'page'`, `mode: 'out-in'`)
+  - Added SEO meta tags (title, description, theme-color)
+  - Added Open Graph meta tags
+  - Added Twitter card meta tags
+  - Set HTML lang attribute to 'en'
+  - Added favicon link
+
+---
+
 ## Notes for Reviewer
 
 ### Suggested Commit Messages (in order)

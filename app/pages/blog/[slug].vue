@@ -86,17 +86,21 @@ useSeoMeta({
 </template>
 
 <style>
+@reference "tailwindcss";
+
 /* Prose Styling for Blog Content */
 .prose-custom {
   @apply max-w-none;
 }
 
 .prose-custom h2 {
-  @apply font-display text-2xl font-semibold text-[var(--color-text-primary)] mt-12 mb-4;
+  font-family: var(--font-display);
+  @apply text-2xl font-semibold text-[var(--color-text-primary)] mt-12 mb-4;
 }
 
 .prose-custom h3 {
-  @apply font-display text-xl font-semibold text-[var(--color-text-primary)] mt-8 mb-3;
+  font-family: var(--font-display);
+  @apply text-xl font-semibold text-[var(--color-text-primary)] mt-8 mb-3;
 }
 
 .prose-custom p {
@@ -129,7 +133,8 @@ useSeoMeta({
 }
 
 .prose-custom code {
-  @apply font-mono text-sm bg-[var(--color-bg-secondary)] px-1.5 py-0.5 rounded text-[var(--color-accent-primary)];
+  font-family: var(--font-mono);
+  @apply text-sm bg-[var(--color-bg-secondary)] px-1.5 py-0.5 rounded text-[var(--color-accent-primary)];
 }
 
 .prose-custom pre {
