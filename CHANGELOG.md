@@ -157,6 +157,43 @@ All notable changes to the Arckie Jadulco Portfolio project will be documented i
 
 ---
 
+### Phase 5: Blog System
+
+#### Added
+- **`app/pages/blog/index.vue`** - Blog listing page
+  - Back to home link
+  - Page header with description
+  - Posts grid using BlogCard components
+  - Empty state for no posts
+
+- **`app/pages/blog/[slug].vue`** - Blog post detail page
+  - Dynamic routing by slug
+  - 404 handling for missing posts
+  - Post header with meta, title, description, tags
+  - Prose styling for markdown content
+  - SEO meta tags from post data
+
+- **`content/blog/hello-world.md`** - Sample blog post
+  - Introduction post with personal story
+  - Demonstrates markdown features
+
+- **`content/blog/building-with-nuxt-4.md`** - Technical blog post
+  - Tutorial-style content
+  - Code examples and best practices
+
+#### Modified
+- **`content.config.ts`** - Added blog collection
+  - Schema with title, description, date, tags, readingTime, image
+  - Source path set to `blog/**`
+
+#### Removed
+- **`content/index.md`** - Removed demo content
+- **`content/about.md`** - Removed demo content
+- **`app/components/Alert.vue`** - Removed demo component
+- **`app/components/Counter.vue`** - Removed demo component
+
+---
+
 ## Notes for Reviewer
 
 ### Suggested Commit Messages (in order)
@@ -202,4 +239,15 @@ feat: add home page sections and main index page
 - Add ExperienceSection with timeline layout
 - Add ContactSection with form validation
 - Create index.vue assembling all sections
+```
+
+**Phase 5:**
+```
+feat: add blog system with Nuxt Content v3
+
+- Configure blog collection with schema in content.config.ts
+- Add blog index page with posts grid
+- Add blog post detail page with prose styling
+- Create sample blog posts (hello-world, building-with-nuxt-4)
+- Remove demo content and components
 ```
