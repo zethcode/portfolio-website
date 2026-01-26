@@ -111,6 +111,52 @@ All notable changes to the Arckie Jadulco Portfolio project will be documented i
 
 ---
 
+### Phase 4: Home Page Sections
+
+#### Added
+- **`app/components/sections/HeroSection.vue`** - Full-height hero
+  - Floating background blobs with animation
+  - Typing animation cycling through roles
+  - CTA buttons (View My Work, Get In Touch)
+  - Animated scroll indicator
+
+- **`app/components/sections/AboutSection.vue`** - About section
+  - 2-column grid (image | content)
+  - Floating code snippet card
+  - Bio paragraphs
+  - Stats grid (Years, Projects, Clients)
+
+- **`app/components/sections/SkillsSection.vue`** - Skills section
+  - 3-column category grid (Frontend, Backend, DevOps)
+  - Uses SkillCard components
+  - Categorized skill listing
+
+- **`app/components/sections/ProjectsSection.vue`** - Projects section
+  - 2-column project grid
+  - 6 placeholder projects (2 featured)
+  - Uses ProjectCard components
+  - "View More on GitHub" button
+
+- **`app/components/sections/ExperienceSection.vue`** - Experience section
+  - Sticky header with download resume button
+  - Timeline layout with 4 entries
+  - Uses TimelineItem components
+
+- **`app/components/sections/ContactSection.vue`** - Contact section
+  - Contact info cards (Email, Location, Availability)
+  - Contact form with validation
+  - Success/error states
+  - Social links reminder
+
+- **`app/pages/index.vue`** - Main portfolio page
+  - Assembles all section components
+  - SEO meta tags configured
+
+#### Removed
+- **`app/pages/[...slug].vue`** - Removed catch-all route
+
+---
+
 ## Notes for Reviewer
 
 ### Suggested Commit Messages (in order)
@@ -143,4 +189,17 @@ feat: add reusable UI components
 - Add ProjectCard with hover overlay and featured badge
 - Add TimelineItem for experience section
 - Add BlogCard with formatted date and tags
+```
+
+**Phase 4:**
+```
+feat: add home page sections and main index page
+
+- Add HeroSection with typing animation and CTAs
+- Add AboutSection with stats and floating code snippet
+- Add SkillsSection with categorized skill grid
+- Add ProjectsSection with featured projects
+- Add ExperienceSection with timeline layout
+- Add ContactSection with form validation
+- Create index.vue assembling all sections
 ```
