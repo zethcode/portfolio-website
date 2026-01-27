@@ -31,7 +31,7 @@ const { data: posts } = await useAsyncData('blog-posts', () =>
         <h1 class="heading-display mt-4">
           Thoughts & Writings
         </h1>
-        <p class="mt-4 max-w-2xl text-body">
+        <p class="mt-4 max-w-2xl text-body md:text-body-lg">
           Sharing my experiences, learnings, and insights about web development,
           technology, and the craft of building software.
         </p>

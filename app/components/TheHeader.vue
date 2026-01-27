@@ -47,7 +47,7 @@ onMounted(() => {
         </NuxtLink>
 
         <!-- Desktop Navigation -->
-        <div class="hidden items-center gap-8 md:flex">
+        <div class="hidden items-center gap-4 md:flex lg:gap-8">
           <template v-for="link in navLinks" :key="link.label">
             <NuxtLink
               v-if="link.href.startsWith('/')"

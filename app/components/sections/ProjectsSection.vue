@@ -68,7 +68,7 @@ const projects = [
         <h2 class="heading-section mt-4">
           Projects I've built
         </h2>
-        <p class="mx-auto mt-4 max-w-2xl text-body">
+        <p class="mx-auto mt-4 max-w-2xl text-body md:text-body-lg">
           A selection of projects that showcase my skills and passion for building
           great software. Each project represents unique challenges and solutions.
         </p>

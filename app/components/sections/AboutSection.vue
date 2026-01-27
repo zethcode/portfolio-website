@@ -9,7 +9,7 @@ const stats = [
 <template>
   <section id="about" class="section-spacing">
     <div class="container-narrow">
-      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+      <div class="grid gap-8 lg:grid-cols-2 lg:gap-16">
         <!-- Image Column -->
         <div class="relative">
           <!-- Main Image Placeholder -->
@@ -31,7 +31,7 @@ const stats = [
 
           <!-- Floating Code Snippet -->
           <div
-            class="absolute -bottom-6 -left-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-4 shadow-[var(--shadow-soft)] lg:-left-12"
+            class="absolute -bottom-6 left-0 hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-4 shadow-[var(--shadow-soft)] sm:block sm:-left-6 lg:-left-12"
           >
             <pre class="font-mono text-xs text-[var(--color-text-secondary)]"><code><span class="text-[var(--color-accent-secondary)]">const</span> <span class="text-[var(--color-accent-primary)]">developer</span> = {
   name: <span class="text-green-400">"Arckie"</span>,
@@ -54,7 +54,7 @@ const stats = [
           </h2>
 
           <!-- Bio -->
-          <div class="mt-6 space-y-4 text-body">
+          <div class="mt-6 space-y-4 text-body md:text-body-lg">
             <p>
               I'm a full-stack developer based in the Philippines with a passion for
               creating beautiful, functional, and user-centered digital experiences.
@@ -74,13 +74,13 @@ const stats = [
           </div>
 
           <!-- Stats -->
-          <div class="mt-10 grid grid-cols-3 gap-6">
+          <div class="mt-10 grid grid-cols-3 gap-3 sm:gap-6">
             <div
               v-for="stat in stats"
               :key="stat.label"
               class="text-center"
             >
-              <div class="font-display text-3xl font-bold text-[var(--color-accent-primary)]">
+              <div class="font-display text-2xl font-bold text-[var(--color-accent-primary)] sm:text-3xl">
                 {{ stat.value }}
               </div>
               <div class="mt-1 text-xs text-[var(--color-text-muted)]">

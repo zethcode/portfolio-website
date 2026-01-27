@@ -69,12 +69,12 @@ watch(() => props.isOpen, (isOpen) => {
           </div>
 
           <!-- Navigation Links -->
-          <nav class="mt-12 flex flex-1 flex-col items-center justify-center gap-8">
+          <nav class="mt-8 flex flex-1 flex-col items-center justify-center gap-5 sm:mt-12 sm:gap-8">
             <template v-for="(link, index) in navLinks" :key="link.label">
               <NuxtLink
                 v-if="link.href.startsWith('/')"
                 :to="link.href"
-                class="font-display text-3xl font-semibold text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)]"
+                class="font-display text-2xl font-semibold text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)] sm:text-3xl"
                 :style="{ animationDelay: `${index * 50}ms` }"
                 @click="emit('close')"
               >
@@ -83,7 +83,7 @@ watch(() => props.isOpen, (isOpen) => {
               <a
                 v-else
                 :href="link.href"
-                class="font-display text-3xl font-semibold text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)]"
+                class="font-display text-2xl font-semibold text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)] sm:text-3xl"
                 :style="{ animationDelay: `${index * 50}ms` }"
                 @click="emit('close')"
               >

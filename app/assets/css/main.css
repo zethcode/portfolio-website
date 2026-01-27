@@ -140,14 +140,28 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-narrow {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
 
   /* Section Spacing */
   .section-spacing {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: 640px) {
+    .section-spacing {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
 
   @media (min-width: 768px) {
@@ -157,131 +171,12 @@
     }
   }
 
-  /* Typography */
-  .heading-display {
-    font-family: var(--font-display);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--color-text-primary);
+  /* Scroll offset for fixed header */
+  [id] {
+    scroll-margin-top: 5.5rem;
   }
 
-  .heading-section {
-    font-family: var(--font-display);
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 600;
-    line-height: 1.2;
-    color: var(--color-text-primary);
-  }
-
-  .text-body {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--color-text-secondary);
-  }
-
-  @media (min-width: 768px) {
-    .text-body {
-      font-size: 1.125rem;
-    }
-  }
-
-  /* Buttons */
-  .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.875rem 1.75rem;
-    background-color: var(--color-accent-primary);
-    color: var(--color-bg-primary);
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 0.9375rem;
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
-  }
-
-  .btn-primary:hover {
-    background-color: color-mix(in srgb, var(--color-accent-primary) 85%, white);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-glow);
-  }
-
-  .btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.875rem 1.75rem;
-    background-color: transparent;
-    color: var(--color-text-primary);
-    font-family: var(--font-body);
-    font-weight: 600;
-    font-size: 0.9375rem;
-    border: 1px solid var(--color-border);
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
-  }
-
-  .btn-secondary:hover {
-    border-color: var(--color-accent-primary);
-    color: var(--color-accent-primary);
-    transform: translateY(-2px);
-  }
-
-  /* Card */
-  .card {
-    background-color: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-  }
-
-  .card:hover {
-    border-color: var(--color-accent-primary);
-    box-shadow: var(--shadow-soft);
-  }
-
-  /* Link with animated underline */
-  .link-underline {
-    position: relative;
-    color: var(--color-text-primary);
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-
-  .link-underline::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--color-accent-primary);
-    transition: width 0.3s ease;
-  }
-
-  .link-underline:hover {
-    color: var(--color-accent-primary);
-  }
-
-  .link-underline:hover::after {
-    width: 100%;
-  }
-
-  /* Grain Overlay */
-  .grain-overlay {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1000;
-    opacity: 0.03;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  }
+  /* Typography, button, link, and overlay classes moved to @utility blocks below */
 
   /* Scroll Reveal Animations */
   .reveal {
@@ -310,6 +205,120 @@
   .reveal-delay-4 {
     transition-delay: 0.4s;
   }
+}
+
+/* =========================================
+   Utility Layer
+   Using @utility so they override preflight's
+   element resets (color: inherit, padding: 0, etc.)
+   ========================================= */
+
+@utility heading-display {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text-primary);
+}
+
+@utility heading-section {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+@utility text-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.625;
+  color: var(--color-text-secondary);
+}
+
+@utility text-body-lg {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+}
+
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background-color: var(--color-accent-primary);
+  color: var(--color-bg-primary);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--color-accent-primary) 85%, white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+@utility btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  background-color: transparent;
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--color-accent-primary);
+    color: var(--color-accent-primary);
+    transform: translateY(-2px);
+  }
+}
+
+@utility link-underline {
+  position: relative;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-accent-primary);
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--color-accent-primary);
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+@utility grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 /* =========================================

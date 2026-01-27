@@ -51,9 +51,9 @@ const props = withDefaults(defineProps<Props>(), {
         class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
       />
 
-      <!-- Hover Overlay -->
+      <!-- Hover Overlay (desktop only) -->
       <div
-        class="absolute inset-0 flex items-center justify-center gap-4 bg-[var(--color-bg-primary)]/80 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100"
+        class="absolute inset-0 hidden items-center justify-center gap-4 bg-[var(--color-bg-primary)]/80 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 md:flex"
       >
         <a
           v-if="demoUrl"
@@ -99,6 +99,30 @@ const props = withDefaults(defineProps<Props>(), {
         >
           {{ tag }}
         </span>
+      </div>
+
+      <!-- Mobile Action Links -->
+      <div v-if="demoUrl || repoUrl" class="mt-4 flex gap-3 md:hidden">
+        <a
+          v-if="demoUrl"
+          :href="demoUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent-primary)] transition-colors hover:text-[var(--color-text-primary)]"
+        >
+          <UIcon name="i-lucide-external-link" class="h-4 w-4" />
+          Live Demo
+        </a>
+        <a
+          v-if="repoUrl"
+          :href="repoUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text-primary)]"
+        >
+          <UIcon name="i-lucide-github" class="h-4 w-4" />
+          Source
+        </a>
       </div>
     </div>
   </article>

@@ -78,7 +78,7 @@ useSeoMeta({
       </header>
 
       <!-- Post Content -->
-      <div class="prose-custom mt-12">
+      <div class="prose-custom mt-8 sm:mt-12">
         <ContentRenderer v-if="post" :value="post" />
       </div>
     </div>
@@ -90,7 +90,7 @@ useSeoMeta({
 
 /* Prose Styling for Blog Content */
 .prose-custom {
-  @apply max-w-none;
+  @apply max-w-3xl;
 }
 
 .prose-custom h2 {
@@ -138,7 +138,8 @@ useSeoMeta({
 }
 
 .prose-custom pre {
-  @apply bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg p-4 overflow-x-auto my-6;
+  @apply bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-lg p-3 sm:p-4 overflow-x-auto my-6 text-sm;
+  -webkit-overflow-scrolling: touch;
 }
 
 .prose-custom pre code {
@@ -146,7 +147,7 @@ useSeoMeta({
 }
 
 .prose-custom img {
-  @apply rounded-lg my-8;
+  @apply rounded-lg my-8 max-w-full h-auto;
 }
 
 .prose-custom hr {

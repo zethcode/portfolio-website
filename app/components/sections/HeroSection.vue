@@ -58,7 +58,7 @@ onUnmounted(() => {
 <template>
   <section
     id="hero"
-    class="relative flex min-h-screen items-center justify-center overflow-hidden"
+    class="relative flex min-h-[100svh] items-center justify-center overflow-hidden"
   >
     <!-- Floating Background Blobs -->
     <div class="pointer-events-none absolute inset-0" aria-hidden="true">
@@ -92,7 +92,7 @@ onUnmounted(() => {
       </div>
 
       <!-- Tagline -->
-      <p class="mx-auto mt-8 max-w-2xl text-body">
+      <p class="mx-auto mt-8 max-w-2xl text-body md:text-body-lg">
         I craft elegant digital experiences with clean code and thoughtful design.
         Passionate about building products that make a difference.
       </p>

@@ -44,14 +44,14 @@ const skillCategories = [
         <h2 class="heading-section mt-4">
           Technologies I work with
         </h2>
-        <p class="mx-auto mt-4 max-w-2xl text-body">
+        <p class="mx-auto mt-4 max-w-2xl text-body md:text-body-lg">
           I'm constantly learning and expanding my toolkit. Here are the technologies
           I use most frequently to bring ideas to life.
         </p>
       </div>
 
       <!-- Skills Grid -->
-      <div class="mt-12 grid gap-8 md:grid-cols-3">
+      <div class="mt-8 grid gap-6 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
         <div
           v-for="category in skillCategories"
           :key="category.title"

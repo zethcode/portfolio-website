@@ -82,13 +82,13 @@ const handleSubmit = async () => {
         <h2 class="heading-section mt-4">
           Let's work together
         </h2>
-        <p class="mx-auto mt-4 max-w-2xl text-body">
+        <p class="mx-auto mt-4 max-w-2xl text-body md:text-body-lg">
           Have a project in mind or just want to say hello? I'd love to hear from you.
           Fill out the form below or reach out directly.
         </p>
       </div>
 
-      <div class="mt-12 grid gap-12 lg:grid-cols-2">
+      <div class="mt-8 grid gap-8 lg:mt-12 lg:grid-cols-2 lg:gap-12">
         <!-- Contact Info -->
         <div class="space-y-6">
           <div
@@ -206,7 +206,7 @@ const handleSubmit = async () => {
             <textarea
               id="message"
               v-model="form.message"
-              rows="5"
+              rows="4"
               placeholder="Tell me about your project..."
               class="w-full resize-none rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-primary)] px-4 py-3 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] transition-colors focus:border-[var(--color-accent-primary)] focus:outline-none"
             />

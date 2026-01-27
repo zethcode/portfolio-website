@@ -34,7 +34,7 @@ const experiences = [
 <template>
   <section id="experience" class="section-spacing bg-[var(--color-bg-secondary)]">
     <div class="container-narrow">
-      <div class="grid gap-12 lg:grid-cols-[1fr,2fr] lg:gap-16">
+      <div class="grid gap-8 lg:grid-cols-[1fr,2fr] lg:gap-16">
         <!-- Left Column - Sticky Header -->
         <div class="lg:sticky lg:top-24 lg:self-start">
           <p class="font-mono text-sm text-[var(--color-accent-primary)]">
@@ -43,7 +43,7 @@ const experiences = [
           <h2 class="heading-section mt-4">
             My professional journey
           </h2>
-          <p class="mt-4 text-body">
+          <p class="mt-4 text-body md:text-body-lg">
             Over the years, I've had the opportunity to work with amazing teams
             and contribute to impactful projects.
           </p>
