@@ -131,52 +131,40 @@
 }
 
 /* =========================================
+   Responsive Custom Properties
+   Used by @utility blocks that need responsive values
+   ========================================= */
+
+:root {
+  --container-padding: 1rem;
+  --section-pt: 4rem;
+  --section-pb: 4rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --container-padding: 1.5rem;
+    --section-pt: 6rem;
+    --section-pb: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-pt: 8rem;
+    --section-pb: 8rem;
+  }
+}
+
+/* =========================================
    Component Layer
    ========================================= */
 
 @layer components {
-  /* Container */
-  .container-narrow {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  @media (min-width: 640px) {
-    .container-narrow {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  /* Section Spacing */
-  .section-spacing {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  @media (min-width: 640px) {
-    .section-spacing {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .section-spacing {
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-    }
-  }
-
   /* Scroll offset for fixed header */
   [id] {
     scroll-margin-top: 5.5rem;
   }
-
-  /* Typography, button, link, and overlay classes moved to @utility blocks below */
 
   /* Scroll Reveal Animations */
   .reveal {
@@ -212,6 +200,19 @@
    Using @utility so they override preflight's
    element resets (color: inherit, padding: 0, etc.)
    ========================================= */
+
+@utility container-narrow {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+@utility section-spacing {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
 
 @utility heading-display {
   font-family: var(--font-display);

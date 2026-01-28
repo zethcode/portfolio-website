@@ -215,6 +215,38 @@ All notable changes to the Arckie Jadulco Portfolio project will be documented i
 
 ---
 
+### Phase 7: Tailwind CSS 4 Preflight Fix
+
+Tailwind CSS 4 uses native CSS cascade layers. The `@layer components` block has lower cascade priority than the utilities layer, so preflight resets (`color: inherit`, `padding: 0`, `border: none`, `font-size: inherit`, `font-weight: inherit`) were overriding custom component classes on `<a>`, `<button>`, and heading elements. Migrating to `@utility` blocks (highest priority layer) resolves these specificity conflicts.
+
+#### Modified
+- **`app/assets/css/main.css`** - Migrated component classes to `@utility` blocks
+  - **Typography** (moved to `@utility`):
+    - `heading-display` — display heading with Playfair Display, clamp sizing
+    - `heading-section` — section heading with Playfair Display
+    - `text-body` — body text with Source Sans 3
+    - `text-body-lg` — large body text variant
+  - **Buttons** (moved to `@utility` with nested `&:hover`):
+    - `btn-primary` — accent background, hover glow + lift
+    - `btn-secondary` — bordered, hover accent color + lift
+  - **Links** (moved to `@utility` with nested `&::after` and `&:hover`):
+    - `link-underline` — animated underline on hover
+  - **Overlay** (moved to `@utility`):
+    - `grain-overlay` — fixed noise texture overlay
+  - **Layout** (moved to `@utility` with responsive CSS custom properties):
+    - `container-narrow` — max-width container with responsive padding via `--container-padding` (1rem → 1.5rem at 640px)
+    - `section-spacing` — vertical padding via `--section-pt` / `--section-pb` (4rem → 6rem at 640px → 8rem at 768px)
+  - Added `:root` responsive custom properties block for breakpoint-dependent values used by `@utility` blocks (since `@utility` cannot contain `@media` queries directly)
+
+#### Removed
+- `.card` class — unused in any Vue template (components use inline Tailwind utilities instead)
+
+#### Kept in `@layer components`
+- `[id] { scroll-margin-top }` — attribute selector, no preflight conflict
+- `.reveal` / `.reveal.is-visible` / `.reveal-delay-*` — compound selectors driven by JS IntersectionObserver, applied to `<div>` elements with no preflight conflict
+
+---
+
 ## Notes for Reviewer
 
 ### Suggested Commit Messages (in order)
