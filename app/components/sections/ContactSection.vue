@@ -3,13 +3,13 @@ const contactInfo = [
   {
     icon: 'i-lucide-mail',
     label: 'Email',
-    value: 'hello@arckie.dev',
-    href: 'mailto:hello@arckie.dev',
+    value: 'arckie.jadulco@gmail.com',
+    href: 'mailto:arckie.jadulco@gmail.com',
   },
   {
     icon: 'i-lucide-map-pin',
     label: 'Location',
-    value: 'Philippines',
+    value: 'Cebu, Philippines',
     href: '',
   },
   {
@@ -120,23 +120,17 @@ const handleSubmit = async () => {
           <p class="text-sm text-[var(--color-text-muted)]">
             You can also find me on
             <a
-              href="https://github.com"
+              href="https://github.com/zethcode"
               target="_blank"
               rel="noopener noreferrer"
               class="text-[var(--color-accent-primary)] hover:underline"
-            >GitHub</a>,
+            >GitHub</a> and
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/arckie-jadulco/"
               target="_blank"
               rel="noopener noreferrer"
               class="text-[var(--color-accent-primary)] hover:underline"
-            >LinkedIn</a>, and
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-[var(--color-accent-primary)] hover:underline"
-            >Twitter</a>.
+            >LinkedIn</a>.
           </p>
         </div>
 

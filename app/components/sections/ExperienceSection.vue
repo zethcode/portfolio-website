@@ -1,32 +1,39 @@
 <script setup lang="ts">
 const experiences = [
   {
-    title: 'Senior Full Stack Developer',
-    company: 'Tech Innovations Inc.',
-    period: '2022 - Present',
-    description: 'Leading development of enterprise-scale applications. Architecting microservices, mentoring junior developers, and implementing best practices across the engineering team.',
-    technologies: ['Vue.js', 'Node.js', 'AWS', 'PostgreSQL'],
+    title: 'Senior Software Engineer',
+    company: 'Arch Global Services (Philippines) Inc.',
+    period: '2024 - Present',
+    description: 'Backend development for insurance claims orchestration system. Building Azure Functions and Python services for claim scoring workflows used by claims specialists.',
+    technologies: ['Python', 'Azure Functions', 'MSSQL', 'REST APIs'],
   },
   {
     title: 'Full Stack Developer',
-    company: 'Digital Agency Co.',
-    period: '2020 - 2022',
-    description: 'Built custom web applications for diverse clients across industries. Focused on creating responsive, performant, and accessible user interfaces.',
-    technologies: ['React', 'Python', 'Django', 'MongoDB'],
+    company: 'TV Startup Inc.',
+    period: 'Nov 2023 - 2024',
+    description: 'Built CMS with Django APIs and Kubernetes integration. Set up DevOps pipelines with Jenkins and Docker on Oracle Cloud bare metal servers.',
+    technologies: ['Python', 'Django', 'Angular', 'Kubernetes', 'Oracle Cloud'],
   },
   {
-    title: 'Frontend Developer',
-    company: 'StartUp Labs',
-    period: '2019 - 2020',
-    description: 'Developed interactive user interfaces for early-stage startups. Collaborated closely with designers to implement pixel-perfect designs.',
-    technologies: ['Vue.js', 'Nuxt.js', 'SCSS', 'Firebase'],
+    title: 'Full Stack Developer',
+    company: 'Navagis',
+    period: 'Oct 2021 - Nov 2023',
+    description: 'Developed business applications with Google Maps integration. Handled frontend enhancements, security upgrades, and GCP server management.',
+    technologies: ['C#', '.NET', 'Python', 'Django', 'PostgreSQL', 'ReactJS', 'GCP'],
   },
   {
-    title: 'Junior Web Developer',
-    company: 'Creative Studio',
-    period: '2018 - 2019',
-    description: 'Started my professional journey building websites and learning modern web development practices. Gained strong foundation in HTML, CSS, and JavaScript.',
-    technologies: ['HTML/CSS', 'JavaScript', 'PHP', 'WordPress'],
+    title: 'SQL Developer',
+    company: 'Signant Health',
+    period: 'Nov 2021 - Aug 2022',
+    description: 'Built data applications for digitizing customer records. Created stored procedures, data migrations, and custom functions via MSSQL.',
+    technologies: ['MSSQL', 'SSMS', 'Git', 'Bitbucket', 'JIRA'],
+  },
+  {
+    title: 'Full Stack Developer',
+    company: 'Accenture',
+    period: '2018 - 2021',
+    description: 'Developed CRM web features for consumer goods company. Implemented CI/CD with TFS and Azure DevOps. Led client requirement discussions.',
+    technologies: ['C#', '.NET', 'MSSQL', 'ReactJS', 'JavaScript', 'Azure DevOps'],
   },
 ]
 </script>
@@ -36,7 +43,7 @@ const experiences = [
     <div class="container-narrow">
       <div class="grid gap-8 lg:grid-cols-[1fr,2fr] lg:gap-16">
         <!-- Left Column - Sticky Header -->
-        <div class="lg:sticky lg:top-24 lg:self-start">
+        <div class="lg:top-24 lg:self-start">
           <p class="font-mono text-sm text-[var(--color-accent-primary)]">
             // Experience
           </p>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const roles = ['Full Stack Developer', 'Problem Solver', 'Tech Enthusiast']
+const roles = ['Senior Software Engineer', 'Full Stack Developer', 'Lifelong Learner']
 const currentRoleIndex = ref(0)
 const displayedRole = ref('')
 const isTyping = ref(true)
@@ -93,8 +93,8 @@ onUnmounted(() => {
 
       <!-- Tagline -->
       <p class="mx-auto mt-8 max-w-2xl text-body md:text-body-lg">
-        I craft elegant digital experiences with clean code and thoughtful design.
-        Passionate about building products that make a difference.
+        Senior Software Engineer with expertise on building web applications and backend systems.
+        From startup environments to enterprise solutions. Based in Cebu, Philippines.
       </p>
 
       <!-- CTA Buttons -->

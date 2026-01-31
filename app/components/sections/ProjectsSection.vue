@@ -1,58 +1,28 @@
 <script setup lang="ts">
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-featured online store with real-time inventory, payment processing, and admin dashboard. Built for scale with microservices architecture.',
-    tags: ['Vue.js', 'Node.js', 'PostgreSQL', 'Stripe'],
+    title: 'JTransit',
+    description: 'A navigation app for Cebu jeepney commuters. Helps locals and visitors navigate traditional jeepney routes across the city.',
+    tags: ['Mobile App', 'Navigation', 'Collaboration'],
     image: '',
-    demoUrl: 'https://example.com',
-    repoUrl: 'https://github.com',
-    featured: true,
+    demoUrl: 'https://jtransit.github.io/',
+    repoUrl: '',
   },
   {
-    title: 'Project Management Tool',
-    description: 'Collaborative workspace for teams with real-time updates, Kanban boards, and time tracking features.',
-    tags: ['React', 'GraphQL', 'MongoDB', 'Socket.io'],
+    title: 'Tela At Iba Pa Clothing',
+    description: 'E-commerce platform for a clothing brand. Features product catalog, cart functionality, and checkout process.',
+    tags: ['React', 'Firebase', 'E-commerce'],
     image: '',
-    demoUrl: 'https://example.com',
-    repoUrl: 'https://github.com',
-    featured: true,
-  },
-  {
-    title: 'AI Writing Assistant',
-    description: 'Smart content generation tool powered by GPT-4 with custom fine-tuning for specific use cases.',
-    tags: ['Next.js', 'Python', 'OpenAI', 'Redis'],
-    image: '',
-    demoUrl: 'https://example.com',
-    repoUrl: 'https://github.com',
-    featured: false,
-  },
-  {
-    title: 'Fitness Tracking App',
-    description: 'Mobile-first application for tracking workouts, nutrition, and progress with social features.',
-    tags: ['React Native', 'Firebase', 'TensorFlow'],
-    image: '',
-    demoUrl: 'https://example.com',
-    repoUrl: 'https://github.com',
-    featured: false,
-  },
-  {
-    title: 'Real Estate Platform',
-    description: 'Property listing and management system with virtual tours and mortgage calculator.',
-    tags: ['Nuxt.js', 'Supabase', 'Mapbox'],
-    image: '',
-    demoUrl: 'https://example.com',
-    repoUrl: 'https://github.com',
-    featured: false,
+    demoUrl: 'https://zethcode.github.io/tabp-clothing/',
+    repoUrl: '',
   },
   {
     title: 'Developer Portfolio',
-    description: 'This very website! A showcase of my work built with modern web technologies.',
+    description: 'This website. A showcase built with modern web technologies and clean design principles.',
     tags: ['Nuxt 4', 'Tailwind CSS', 'TypeScript'],
     image: '',
     demoUrl: '',
-    repoUrl: 'https://github.com',
-    featured: false,
+    repoUrl: 'https://github.com/zethcode',
   },
 ]
 </script>
@@ -75,7 +45,7 @@ const projects = [
       </div>
 
       <!-- Projects Grid -->
-      <div class="mt-12 grid gap-6 md:grid-cols-2">
+      <div class="mt-8 grid gap-6 sm:mt-12 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
         <UiProjectCard
           v-for="project in projects"
           :key="project.title"
@@ -85,14 +55,13 @@ const projects = [
           :image="project.image"
           :demo-url="project.demoUrl"
           :repo-url="project.repoUrl"
-          :featured="project.featured"
         />
       </div>
 
       <!-- View More Button -->
       <div class="mt-12 text-center">
         <a
-          href="https://github.com"
+          href="https://github.com/AJadulco"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-secondary"
