@@ -8,6 +8,7 @@ let typingInterval: ReturnType<typeof setInterval> | null = null
 
 const typeRole = () => {
   const currentRole = roles[currentRoleIndex.value]
+  if (!currentRole) return
   let charIndex = 0
   isTyping.value = true
   displayedRole.value = ''
