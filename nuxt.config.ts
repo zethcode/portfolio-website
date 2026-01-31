@@ -12,6 +12,12 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
 
+  image: {
+    static: {
+      baseURL: '/portfolio-website/',
+    },
+  },
+
   googleFonts: {
     families: {
       'Playfair Display': [400, 500, 600, 700],
@@ -30,6 +36,7 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: '/portfolio-website/',
     pageTransition: {
       name: 'page',
       mode: 'out-in',
