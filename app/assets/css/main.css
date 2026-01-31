@@ -151,8 +151,8 @@
 
 @media (min-width: 768px) {
   :root {
-    --section-pt: 8rem;
-    --section-pb: 8rem;
+    --section-pt: 4rem;
+    --section-pb: 4rem;
   }
 }
 

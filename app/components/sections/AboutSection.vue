@@ -9,18 +9,23 @@ const stats = [
 <template>
   <section id="about" class="section-spacing">
     <div class="container-narrow">
-      <div class="grid gap-8 lg:grid-cols-2 lg:gap-16">
+      <div class="grid gap-6 sm:grid-cols-[2fr_3fr] sm:gap-8 lg:grid-cols-2 lg:gap-16">
         <!-- Image Column -->
         <div class="relative">
           <!-- Main Image Placeholder -->
           <div
-            class="relative aspect-[4/5] overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)]"
+            class="relative mx-auto aspect-square max-w-[280px] overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] sm:mx-0 sm:max-w-none"
           >
-            <div class="flex h-full w-full items-center justify-center">
+            <div class="flex h-full w-full justify-center items-start">
               <UIcon
                 name="i-lucide-user"
                 class="h-24 w-24 text-[var(--color-text-muted)]"
               />
+              <img
+                src="/assets/images/profile-cowboy-hat-1.jpg"
+                alt="Profile Picture"
+                class="rounded"
+              >
             </div>
 
             <!-- Decorative Frame -->
