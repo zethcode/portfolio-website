@@ -25,5 +25,8 @@
     "nuxt": "^4.3.0",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.87"
   }
 }
