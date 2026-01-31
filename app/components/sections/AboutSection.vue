@@ -33,17 +33,33 @@ const stats = [
               class="absolute -bottom-4 -right-4 -z-10 h-full w-full rounded-2xl border-2 border-[var(--color-accent-primary)] opacity-20"
             />
           </div>
+          
+          <!-- Stats -->
+          <div class="mt-10 grid grid-cols-3 gap-3 sm:gap-6">
+            <div
+              v-for="stat in stats"
+              :key="stat.label"
+              class="text-center"
+            >
+              <div class="font-display text-2xl font-bold text-[var(--color-accent-primary)] sm:text-3xl">
+                {{ stat.value }}
+              </div>
+              <div class="mt-1 text-xs text-[var(--color-text-muted)]">
+                {{ stat.label }}
+              </div>
+            </div>
+          </div>
 
           <!-- Floating Code Snippet -->
-          <div
-            class="absolute -bottom-6 left-0 hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-4 shadow-[var(--shadow-soft)] sm:block sm:-left-6 lg:-left-12"
+          <!-- <div
+            class="absolute top-95 left-0 hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-4 shadow-[var(--shadow-soft)] sm:block sm:-left-6 lg:-left-12"
           >
             <pre class="font-mono text-xs text-[var(--color-text-secondary)]"><code><span class="text-[var(--color-accent-secondary)]">const</span> <span class="text-[var(--color-accent-primary)]">arckie</span> = {
-  role: <span class="text-green-400">"Senior SWE"</span>,
-  focus: <span class="text-green-400">"Backend"</span>,
+  role: <span class="text-green-400">"Software Engineer"</span>,
+  focus: <span class="text-green-400">"Full Stack"</span>,
   learning: <span class="text-[var(--color-accent-primary)]">true</span>
 };</code></pre>
-          </div>
+          </div> -->
         </div>
 
         <!-- Content Column -->
@@ -62,13 +78,13 @@ const stats = [
           <div class="mt-6 space-y-4 text-body md:text-body-lg">
             <p>
               Expertise isn't a summit to reach; it's a horizon that recedes as you approach.
-              The craft demands perpetual refinement, and I've made peace with that—in fact,
-              I've come to prefer it. Based in Cebu, Philippines, I've built my career on
-              the belief that the best engineers stay curious, not comfortable.
+              The craft demands perpetual refinement, and I've made peace with that. As a matter of fact,
+              I've come to prefer it. I am based in Cebu, Philippines, I've built my career on
+              the belief that the best engineers stay curious, not comfortable, constantly seeking discomfort.
             </p>
             <p>
               Currently at Arch Global Services as a Senior Software Engineer, I build
-              backend systems for insurance claims orchestration—Python, Azure Functions,
+              backend systems for insurance claims orchestration with technologies like Python, Azure Functions,
               and MSSQL powering workflows that help claims specialists do their jobs better.
             </p>
             <p>
@@ -81,22 +97,6 @@ const stats = [
               The tech industry moves fast. Frameworks rise and fall. But curiosity?
               That stays. And as long as there's something new to learn, I'll be here ready to figure it out.
             </p>
-          </div>
-
-          <!-- Stats -->
-          <div class="mt-10 grid grid-cols-3 gap-3 sm:gap-6">
-            <div
-              v-for="stat in stats"
-              :key="stat.label"
-              class="text-center"
-            >
-              <div class="font-display text-2xl font-bold text-[var(--color-accent-primary)] sm:text-3xl">
-                {{ stat.value }}
-              </div>
-              <div class="mt-1 text-xs text-[var(--color-text-muted)]">
-                {{ stat.label }}
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -94,7 +94,7 @@ onUnmounted(() => {
 
       <!-- Tagline -->
       <p class="mx-auto mt-8 max-w-2xl text-body md:text-body-lg">
-        Senior Software Engineer with expertise on building web applications and backend systems.
+        A Software Engineer with expertise on building web applications, backend systems, and infrastructure work.
         From startup environments to enterprise solutions. Based in Cebu, Philippines.
       </p>
 
