@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const roles = ['Senior Software Engineer', 'Full Stack Developer', 'Lifelong Learner']
+const roles = ['Software Engineer', 'Lifelong Learner', 'Problem Solver', 'Tech Enthusiast']
 const currentRoleIndex = ref(0)
 const displayedRole = ref('')
 const isTyping = ref(true)

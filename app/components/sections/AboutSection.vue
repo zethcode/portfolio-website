@@ -61,10 +61,10 @@ const stats = [
           <!-- Bio -->
           <div class="mt-6 space-y-4 text-body md:text-body-lg">
             <p>
-              I am and always will be a student. That's not just a mindset—it's how I
-              approach every line of code, every new framework, every problem that lands
-              on my desk. Based in Cebu, Philippines, I've built my career on the belief
-              that learning should never feel like a chore. It should feel like discovery.
+              Expertise isn't a summit to reach; it's a horizon that recedes as you approach.
+              The craft demands perpetual refinement, and I've made peace with that—in fact,
+              I've come to prefer it. Based in Cebu, Philippines, I've built my career on
+              the belief that the best engineers stay curious, not comfortable.
             </p>
             <p>
               Currently at Arch Global Services as a Senior Software Engineer, I build

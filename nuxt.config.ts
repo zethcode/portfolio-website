@@ -45,26 +45,26 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      title: 'Arckie Jadulco | Full Stack Developer',
+      title: 'Arckie Jadulco | Software Engineer',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Full Stack Developer crafting elegant digital experiences with clean code and thoughtful design.' },
+        { name: 'description', content: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.' },
         { name: 'theme-color', content: '#1a1a1f' },
         // Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Arckie Jadulco' },
-        { property: 'og:title', content: 'Arckie Jadulco | Full Stack Developer' },
-        { property: 'og:description', content: 'Full Stack Developer crafting elegant digital experiences with clean code and thoughtful design.' },
+        { property: 'og:title', content: 'Arckie Jadulco | Software Engineer' },
+        { property: 'og:description', content: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.' },
         { property: 'og:image', content: '/og-image.png' },
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Arckie Jadulco | Full Stack Developer' },
-        { name: 'twitter:description', content: 'Full Stack Developer crafting elegant digital experiences with clean code and thoughtful design.' },
+        { name: 'twitter:title', content: 'Arckie Jadulco | Software Engineer' },
+        { name: 'twitter:description', content: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.' },
         { name: 'twitter:image', content: '/og-image.png' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
       ],
     },
   },

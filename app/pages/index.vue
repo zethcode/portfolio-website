@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Arckie Jadulco | Full Stack Developer',
-  description: 'Full Stack Developer crafting elegant digital experiences with clean code and thoughtful design. Explore my portfolio of projects and get in touch.',
-  ogTitle: 'Arckie Jadulco | Full Stack Developer',
-  ogDescription: 'Full Stack Developer crafting elegant digital experiences with clean code and thoughtful design.',
+  title: 'Arckie Jadulco | Software Engineer',
+  description: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design. Explore my portfolio of projects and get in touch.',
+  ogTitle: 'Arckie Jadulco | Software Engineer',
+  ogDescription: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.',
   ogImage: '/og-image.png',
   twitterCard: 'summary_large_image',
 })
