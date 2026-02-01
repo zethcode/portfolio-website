@@ -67,4 +67,4 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: portfolio-website
           directory: ./dist
-          productionBranch: main
+          branch: main
