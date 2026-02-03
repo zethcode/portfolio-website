@@ -17,12 +17,6 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
 
-  image: {
-    static: {
-      baseURL: baseURL,
-    },
-  },
-
   googleFonts: {
     families: {
       'Playfair Display': [400, 500, 600, 700],

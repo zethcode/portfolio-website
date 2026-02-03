@@ -4,20 +4,20 @@ const skillCategories = [
     title: 'Frontend',
     icon: 'i-lucide-layout',
     skills: [
-      { name: 'ReactJS', icon: 'i-lucide-atom', level: 'advanced' as const },
+      { name: 'TypeScript', icon: 'i-lucide-file-code', level: 'expert' as const },
       { name: 'Angular', icon: 'i-lucide-component', level: 'advanced' as const },
-      { name: 'TypeScript', icon: 'i-lucide-file-code', level: 'advanced' as const },
-      { name: 'Bootstrap / Material UI', icon: 'i-lucide-palette', level: 'advanced' as const },
+      { name: 'VueJS / ReactJS', icon: 'i-lucide-atom', level: 'advanced' as const },
+      { name: 'Tailwind CSS / Material UI', icon: 'i-lucide-palette', level: 'advanced' as const },
     ],
   },
   {
     title: 'Backend',
     icon: 'i-lucide-server',
     skills: [
-      { name: 'Python / Django', icon: 'i-lucide-code', level: 'advanced' as const },
-      { name: 'C# / .NET Core', icon: 'i-lucide-hexagon', level: 'advanced' as const },
-      { name: 'Node.js / NestJS', icon: 'i-lucide-server', level: 'advanced' as const },
-      { name: 'MSSQL / PostgreSQL', icon: 'i-lucide-database', level: 'advanced' as const },
+      { name: 'Python / Django', icon: 'i-lucide-code', level: 'expert' as const },
+      { name: 'MSSQL / PostgreSQL', icon: 'i-lucide-database', level: 'expert' as const },
+      { name: 'Node.js / NestJS', icon: 'i-lucide-server', level: 'intermediate' as const },
+      { name: 'C# / .NET Core', icon: 'i-lucide-hexagon', level: 'intermediate' as const },
     ],
   },
   {
@@ -26,8 +26,8 @@ const skillCategories = [
     skills: [
       { name: 'Docker / Kubernetes', icon: 'i-lucide-container', level: 'advanced' as const },
       { name: 'Jenkins / GitLab CI', icon: 'i-lucide-workflow', level: 'advanced' as const },
-      { name: 'GCP / AWS / Oracle', icon: 'i-lucide-cloud', level: 'intermediate' as const },
-      { name: 'Git / TFS / Azure DevOps', icon: 'i-lucide-git-branch', level: 'advanced' as const },
+      { name: 'Git / GitHub / GitLab', icon: 'i-lucide-git-branch', level: 'advanced' as const },
+      { name: 'Oracle / AWS / GCP / Azure', icon: 'i-lucide-cloud', level: 'intermediate' as const },
     ],
   },
 ]

@@ -4,7 +4,7 @@ const projects = [
     title: 'JTransit',
     description: 'A navigation app for Cebu jeepney commuters. Helps locals and visitors navigate traditional jeepney routes across the city.',
     tags: ['Mobile App', 'Navigation', 'Collaboration'],
-    image: '',
+    image: '/images/preview-jtransit.png',
     demoUrl: 'https://jtransit.github.io/',
     repoUrl: '',
   },
@@ -12,7 +12,7 @@ const projects = [
     title: 'Tela At Iba Pa Clothing',
     description: 'E-commerce platform for a clothing brand. Features product catalog, cart functionality, and checkout process.',
     tags: ['React', 'Firebase', 'E-commerce'],
-    image: '',
+    image: '/images/preview-tabp.png',
     demoUrl: 'https://zethcode.github.io/tabp-clothing/',
     repoUrl: '',
   },
@@ -20,9 +20,9 @@ const projects = [
     title: 'Developer Portfolio',
     description: 'This website. A showcase built with modern web technologies and clean design principles.',
     tags: ['Nuxt 4', 'Tailwind CSS', 'TypeScript'],
-    image: '',
+    image: '/images/preview-portfolio.png',
     demoUrl: '',
-    repoUrl: 'https://github.com/zethcode',
+    repoUrl: 'https://github.com/zethcode/portfolio-website',
   },
 ]
 </script>
@@ -61,7 +61,7 @@ const projects = [
       <!-- View More Button -->
       <div class="mt-12 text-center">
         <a
-          href="https://github.com/AJadulco"
+          href="https://github.com/zethcode"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-secondary"

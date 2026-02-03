@@ -43,7 +43,7 @@ onMounted(() => {
           to="/"
           class="font-display text-2xl font-bold tracking-tight text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)]"
         >
-          <img src="/assets/images/azj-white-transparent-v2.png" alt="Logo" class="w-30 mr-2 inline-block transition-opacity duration-200 hover:opacity-75 active:opacity-50" />
+          <NuxtImg src="/images/azj-white-transparent-v2.png" alt="Logo" class="w-30 mr-2 inline-block transition-opacity duration-200 hover:opacity-75 active:opacity-50" />
         </NuxtLink>
 
         <!-- Desktop Navigation -->

@@ -21,11 +21,11 @@ const stats = [
                 name="i-lucide-user"
                 class="h-24 w-24 text-[var(--color-text-muted)]"
               />
-              <img
-                src="/assets/images/profile-cowboy-hat-1.jpg"
+              <NuxtImg
+                src="/images/profile-cowboy-hat-1.jpg"
                 alt="Profile Picture"
                 class="rounded"
-              >
+              />
             </div>
 
             <!-- Decorative Frame -->
