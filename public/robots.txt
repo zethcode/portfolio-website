@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /resume
 
-Sitemap: https://arckiejadulco.com/sitemap.xml
+Sitemap: https://arckiejadulco.dev/sitemap.xml
