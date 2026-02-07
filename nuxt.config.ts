@@ -6,6 +6,7 @@ const baseURL = process.env.NUXT_APP_BASE_URL || '/'
 
 export default defineNuxtConfig({
   modules: [
+    '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/a11y',
@@ -17,10 +18,37 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
   ],
 
-  image: {
-    static: {
-      baseURL: baseURL,
+  site: {
+    url: 'https://arckiejadulco.dev',
+    name: 'Arckie Jadulco',
+    description: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.',
+    defaultLocale: 'en',
+  },
+
+  schemaOrg: {
+    identity: {
+      type: 'Person',
+      name: 'Arckie Jadulco',
+      alternateName: 'Arckie Zeth Jadulco',
+      url: 'https://arckiejadulco.dev',
+      image: 'https://arckiejadulco.dev/images/profile-cowboy-hat-1.jpg',
+      jobTitle: 'Senior Software Engineer',
+      worksFor: { type: 'Organization', name: 'Arch Global Services' },
+      alumniOf: { type: 'CollegeOrUniversity', name: 'University of San Carlos' },
+      knowsAbout: ['Python', 'TypeScript', 'Azure', 'Django', 'Vue.js', 'Nuxt'],
+      sameAs: [
+        'https://github.com/zethcode',
+        'https://www.linkedin.com/in/arckie-jadulco/',
+      ],
     },
+  },
+
+  robots: {
+    disallow: ['/resume'],
+  },
+
+  sitemap: {
+    exclude: ['/resume'],
   },
 
   googleFonts: {
@@ -50,26 +78,14 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      title: 'Arckie Jadulco | Software Engineer',
+      titleTemplate: '%s | Arckie Jadulco',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.' },
         { name: 'theme-color', content: '#1a1a1f' },
-        // Open Graph
-        { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Arckie Jadulco' },
-        { property: 'og:title', content: 'Arckie Jadulco | Software Engineer' },
-        { property: 'og:description', content: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.' },
-        { property: 'og:image', content: `${baseURL}og-image.png` },
-        // Twitter
-        { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Arckie Jadulco | Software Engineer' },
-        { name: 'twitter:description', content: 'Software Engineer crafting elegant digital experiences with clean code and thoughtful design.' },
-        { name: 'twitter:image', content: `${baseURL}og-image.png` },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
     },
   },

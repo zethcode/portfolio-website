@@ -21,11 +21,11 @@ const stats = [
                 name="i-lucide-user"
                 class="h-24 w-24 text-[var(--color-text-muted)]"
               />
-              <img
-                src="/assets/images/profile-cowboy-hat-1.jpg"
+              <NuxtImg
+                src="/images/profile-cowboy-hat-1.jpg"
                 alt="Profile Picture"
                 class="rounded"
-              >
+              />
             </div>
 
             <!-- Decorative Frame -->
@@ -49,17 +49,6 @@ const stats = [
               </div>
             </div>
           </div>
-
-          <!-- Floating Code Snippet -->
-          <!-- <div
-            class="absolute top-95 left-0 hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] p-4 shadow-[var(--shadow-soft)] sm:block sm:-left-6 lg:-left-12"
-          >
-            <pre class="font-mono text-xs text-[var(--color-text-secondary)]"><code><span class="text-[var(--color-accent-secondary)]">const</span> <span class="text-[var(--color-accent-primary)]">arckie</span> = {
-  role: <span class="text-green-400">"Software Engineer"</span>,
-  focus: <span class="text-green-400">"Full Stack"</span>,
-  learning: <span class="text-[var(--color-accent-primary)]">true</span>
-};</code></pre>
-          </div> -->
         </div>
 
         <!-- Content Column -->

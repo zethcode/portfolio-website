@@ -95,7 +95,7 @@ watch(() => props.isOpen, (isOpen) => {
           <!-- Social Links -->
           <div class="flex justify-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/zethcode"
               target="_blank"
               rel="noopener noreferrer"
               class="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent-primary)]"
@@ -104,22 +104,13 @@ watch(() => props.isOpen, (isOpen) => {
               <UIcon name="i-lucide-github" class="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/arckie-jadulco"
               target="_blank"
               rel="noopener noreferrer"
               class="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent-primary)]"
               aria-label="LinkedIn"
             >
               <UIcon name="i-lucide-linkedin" class="h-6 w-6" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent-primary)]"
-              aria-label="Twitter"
-            >
-              <UIcon name="i-lucide-twitter" class="h-6 w-6" />
             </a>
           </div>
         </div>

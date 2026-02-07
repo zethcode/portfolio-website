@@ -4,22 +4,22 @@ const experiences = [
     title: 'Senior Software Engineer',
     company: 'Arch Global Services (Philippines) Inc.',
     period: '2024 - Present',
-    description: 'Backend development for insurance claims orchestration system. Building Azure Functions and Python services for claim scoring workflows used by claims specialists.',
-    technologies: ['Python', 'Azure Functions', 'MSSQL', 'REST APIs'],
+    description: 'Backend development for insurance claims orchestration system. Building Azure Functions and Python services for claim scoring workflows used by claims specialists. Now exploring the use of AI tools like GitHub Copilot and Claude Code to boost productivity and code quality.',
+    technologies: ['Python', 'Azure Functions', 'MSSQL', 'GitHub Actions', 'GitHub Copilot', 'Claude Code'],
   },
   {
     title: 'Full Stack Developer',
     company: 'TV Startup Inc.',
     period: 'Nov 2023 - 2024',
-    description: 'Built CMS with Django APIs and Kubernetes integration. Set up DevOps pipelines with Jenkins and Docker on Oracle Cloud bare metal servers.',
-    technologies: ['Python', 'Django', 'Angular', 'Kubernetes', 'Oracle Cloud'],
+    description: 'Built and maintained Django APIs, and an Angular frontend for a CMS platform, and setup the company tech infrastructure with Kubernetes. Set up DevOps pipelines with Jenkins and Docker on Oracle Cloud and bare metal servers in a dedicated datacenter.',
+    technologies: ['Python', 'Django', 'Angular', 'PostgreSQL', 'Kubernetes', 'Oracle Cloud'],
   },
   {
     title: 'Full Stack Developer',
     company: 'Navagis',
     period: 'Oct 2021 - Nov 2023',
     description: 'Developed business applications with Google Maps integration. Handled frontend enhancements, security upgrades, and GCP server management.',
-    technologies: ['C#', '.NET', 'Python', 'Django', 'PostgreSQL', 'ReactJS', 'GCP'],
+    technologies: ['Python', 'Django', 'ReactJS', 'PostgreSQL', 'GCP'],
   },
   {
     title: 'SQL Developer',
@@ -32,8 +32,8 @@ const experiences = [
     title: 'Full Stack Developer',
     company: 'Accenture',
     period: '2018 - 2021',
-    description: 'Developed CRM web features for consumer goods company. Implemented CI/CD with TFS and Azure DevOps. Led client requirement discussions.',
-    technologies: ['C#', '.NET', 'MSSQL', 'ReactJS', 'JavaScript', 'Azure DevOps'],
+    description: 'Developed CRM web features for consumer goods company. Created features for both frontend and backend development requirements. Led client requirement discussions.',
+    technologies: ['C#', '.NET Core', 'MSSQL', 'ReactJS', 'JavaScript', 'Azure DevOps'],
   },
 ]
 </script>
@@ -57,7 +57,7 @@ const experiences = [
 
           <!-- Download Resume Button -->
           <a
-            href="/resume.pdf"
+            href="/documents/ajadulco-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary mt-8 inline-flex"

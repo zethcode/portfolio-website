@@ -4,18 +4,13 @@ const currentYear = new Date().getFullYear()
 const socialLinks = [
   {
     label: 'GitHub',
-    href: 'https://github.com',
+    href: 'https://github.com/zethcode',
     icon: 'i-lucide-github',
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/arckie-jadulco',
     icon: 'i-lucide-linkedin',
-  },
-  {
-    label: 'Twitter',
-    href: 'https://twitter.com',
-    icon: 'i-lucide-twitter',
   },
 ]
 </script>
