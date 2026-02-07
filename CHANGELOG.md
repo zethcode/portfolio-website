@@ -247,6 +247,33 @@ Tailwind CSS 4 uses native CSS cascade layers. The `@layer components` block has
 
 ---
 
+### Phase 8: High Priority Fixes & Polish
+
+#### Fixed
+- **`app/components/sections/ContactSection.vue`** - Removed debug `console.log('Form submitted:', form)` from contact form handler
+- **`app/components/TheFooter.vue`** - Updated social links to real profile URLs (`github.com/zethcode`, `linkedin.com/in/arckie-jadulco`), removed Twitter link
+- **`app/components/TheMobileMenu.vue`** - Updated social links to real profile URLs, removed Twitter link
+- **`.github/workflows/production.yml`** - Removed trailing space from filename (`production .yml` → `production.yml`)
+
+#### Added
+- **`app/error.vue`** - Custom error page matching portfolio theme
+  - Displays status code (404/500) with themed styling
+  - "Page not found" / "Something went wrong" messages
+  - "Back to Home" button using `clearError({ redirect: '/' })`
+- **`public/robots.txt`** - SEO robots file
+  - Allows all crawlers, disallows `/resume`
+  - Sitemap reference to `arckiejadulco.com/sitemap.xml`
+
+#### Changed
+- **`app/components/sections/ExperienceSection.vue`** - Resume download link updated from `/resume.pdf` to `/documents/ajadulco-resume.pdf`
+- **`public/documents/ajadulco-resume.pdf`** - Resume relocated from `public/resume.pdf` to `public/documents/`
+
+#### Removed
+- **`public/resume.pdf`** - Moved to `public/documents/ajadulco-resume.pdf`
+- **`public/images/profile-cowboy-hat-1.jpg~RF50941ce.TMP`** - Deleted temp file
+
+---
+
 ## Notes for Reviewer
 
 ### Suggested Commit Messages (in order)
