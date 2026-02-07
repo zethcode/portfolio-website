@@ -57,7 +57,7 @@ const experiences = [
 
           <!-- Download Resume Button -->
           <a
-            href="/resume.pdf"
+            href="/documents/ajadulco-resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary mt-8 inline-flex"
