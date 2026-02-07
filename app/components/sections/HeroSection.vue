@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const roles = ['Software Engineer', 'Lifelong Learner', 'Problem Solver', 'Tech Enthusiast']
 const currentRoleIndex = ref(0)
-const displayedRole = ref('')
+const displayedRole = ref('Software Engineer')
 const isTyping = ref(true)
 
 let typingInterval: ReturnType<typeof setInterval> | null = null

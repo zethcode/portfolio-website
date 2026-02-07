@@ -24,12 +24,21 @@ const formattedDate = computed(() => {
 })
 
 useSeoMeta({
-  title: () => `${post.value?.title} | Arckie Jadulco`,
+  title: () => post.value?.title,
   description: () => post.value?.description,
   ogTitle: () => `${post.value?.title} | Arckie Jadulco`,
   ogDescription: () => post.value?.description,
   ogImage: () => post.value?.image || '/og-image.png',
 })
+
+useSchemaOrg([
+  defineBlogPosting({
+    headline: post.value?.title,
+    description: post.value?.description,
+    datePublished: post.value?.date,
+    author: { name: 'Arckie Jadulco', url: 'https://arckiejadulco.dev' },
+  }),
+])
 </script>
 
 <template>
