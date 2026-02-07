@@ -8,12 +8,12 @@ const emit = defineEmits<{
 }>()
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
+  { label: 'About', href: '/#about' },
+  { label: 'Skills', href: '/#skills' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'Experience', href: '/#experience' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 // Handle escape key
@@ -70,26 +70,16 @@ watch(() => props.isOpen, (isOpen) => {
 
           <!-- Navigation Links -->
           <nav class="mt-8 flex flex-1 flex-col items-center justify-center gap-5 sm:mt-12 sm:gap-8">
-            <template v-for="(link, index) in navLinks" :key="link.label">
-              <NuxtLink
-                v-if="link.href.startsWith('/')"
-                :to="link.href"
-                class="font-display text-2xl font-semibold text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)] sm:text-3xl"
-                :style="{ animationDelay: `${index * 50}ms` }"
-                @click="emit('close')"
-              >
-                {{ link.label }}
-              </NuxtLink>
-              <a
-                v-else
-                :href="link.href"
-                class="font-display text-2xl font-semibold text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)] sm:text-3xl"
-                :style="{ animationDelay: `${index * 50}ms` }"
-                @click="emit('close')"
-              >
-                {{ link.label }}
-              </a>
-            </template>
+            <NuxtLink
+              v-for="(link, index) in navLinks"
+              :key="link.label"
+              :to="link.href"
+              class="font-display text-2xl font-semibold text-[var(--color-text-primary)] transition-colors hover:text-[var(--color-accent-primary)] sm:text-3xl"
+              :style="{ animationDelay: `${index * 50}ms` }"
+              @click="emit('close')"
+            >
+              {{ link.label }}
+            </NuxtLink>
           </nav>
 
           <!-- Social Links -->

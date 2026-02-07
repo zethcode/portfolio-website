@@ -4,6 +4,7 @@
 # Prerequisites — add these as GitHub repository secrets:
 #   CLOUDFLARE_API_TOKEN  → API token with "Cloudflare Pages: Edit" permission
 #   CLOUDFLARE_ACCOUNT_ID → Your Cloudflare account ID (visible in dashboard sidebar)
+#   RESEND_API_KEY        → Resend API key for the contact form email service
 #
 # Also update the `projectName` value below to match your Cloudflare Pages project name.
 #
@@ -58,6 +59,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Static HTML export with Nuxt
         run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         # No NUXT_APP_BASE_URL needed here — production runs at the root
         # of arckiejadulco.dev, so the default "/" applies.
       - name: Deploy to Cloudflare Pages

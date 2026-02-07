@@ -6,12 +6,12 @@ const emit = defineEmits<{
 const isScrolled = ref(false)
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Experience', href: '#experience' },
+  { label: 'About', href: '/#about' },
+  { label: 'Skills', href: '/#skills' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'Experience', href: '/#experience' },
+  { label: 'Contact', href: '/#contact' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '#contact' },
 ]
 
 onMounted(() => {
@@ -48,22 +48,14 @@ onMounted(() => {
 
         <!-- Desktop Navigation -->
         <div class="hidden items-center gap-4 md:flex lg:gap-8">
-          <template v-for="link in navLinks" :key="link.label">
-            <NuxtLink
-              v-if="link.href.startsWith('/')"
-              :to="link.href"
-              class="link-underline text-sm font-medium tracking-wide text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text-primary)]"
-            >
-              {{ link.label }}
-            </NuxtLink>
-            <a
-              v-else
-              :href="link.href"
-              class="link-underline text-sm font-medium tracking-wide text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text-primary)]"
-            >
-              {{ link.label }}
-            </a>
-          </template>
+          <NuxtLink
+            v-for="link in navLinks"
+            :key="link.label"
+            :to="link.href"
+            class="link-underline text-sm font-medium tracking-wide text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text-primary)]"
+          >
+            {{ link.label }}
+          </NuxtLink>
         </div>
 
         <!-- Mobile Menu Toggle -->

@@ -15,6 +15,7 @@ There are several reasons why I decided to start writing:
 1. **Learning in public** - Writing forces me to organize my thoughts and understand concepts more deeply
 2. **Helping others** - If my experiences can help even one person, it's worth the effort
 3. **Building a portfolio** - A blog showcases not just coding skills but also communication abilities
+4. **Fun Brain Exercise** - I wanted to keep sharpening the saw for my creative side of the brain, if you know what I mean.
 
 ## What to Expect
 
@@ -24,6 +25,7 @@ I'll be covering a variety of topics including:
 - **Tech Reviews** - My honest opinions on tools, frameworks, and technologies I use
 - **Career Insights** - Lessons learned from my journey as a developer
 - **Personal Projects** - Deep dives into side projects and what I learned building them
+- **Hobbies & Interests** - When I feel like sharing a more personal side of me
 
 ## My Commitment
 
@@ -31,7 +33,7 @@ I aim to publish at least one quality post per month. I believe in quality over 
 
 > "The best time to plant a tree was 20 years ago. The second best time is now." - Chinese Proverb
 
-This quote resonates with me because I've been putting off starting a blog for years. But here we are, finally taking that first step!
+This quote resonates with me because I've been putting off starting a blog (even completing this website) for years. But here we are, finally taking that first giant leap!
 
 ## Let's Connect
 
