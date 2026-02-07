@@ -104,7 +104,7 @@ watch(() => props.isOpen, (isOpen) => {
               <UIcon name="i-lucide-github" class="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/arckie-jadulco"
+              href="https://www.linkedin.com/in/arckie-jadulco"
               target="_blank"
               rel="noopener noreferrer"
               class="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent-primary)]"
