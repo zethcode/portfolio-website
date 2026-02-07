@@ -3,7 +3,7 @@ const projects = [
   {
     title: 'JTransit',
     description: 'A navigation app for Cebu jeepney commuters. Helps locals and visitors navigate traditional jeepney routes across the city.',
-    tags: ['Mobile App', 'Navigation', 'Collaboration'],
+    tags: ['Mobile App', 'Python', 'Django', 'Navigation', 'Collaboration'],
     image: '/images/preview-jtransit.png',
     demoUrl: 'https://jtransit.github.io/',
     repoUrl: '',
@@ -11,19 +11,27 @@ const projects = [
   {
     title: 'Tela At Iba Pa Clothing',
     description: 'E-commerce platform for a clothing brand. Features product catalog, cart functionality, and checkout process.',
-    tags: ['React', 'Firebase', 'E-commerce'],
+    tags: ['React.js', 'Firebase', 'E-commerce'],
     image: '/images/preview-tabp.png',
     demoUrl: 'https://zethcode.github.io/tabp-clothing/',
-    repoUrl: '',
+    repoUrl: 'https://github.com/zethcode/tabp-clothing',
+  },
+  {
+    title: 'Child Health and Development Journal',
+    description: 'A journaling tool for your childs health and development. Features tools and resources for parents and caregivers to track milestones and progress, and also their healthcare records.',
+    tags: ['Nuxt 4', 'Supabase', 'Nuxt UI', 'Tailwind CSS'],
+    image: '/images/preview-child-health-journal.png',
+    demoUrl: 'https://zethcode.github.io/child-health-and-development-journal/',
+    repoUrl: 'https://github.com/zethcode/child-health-and-development-journal',
   },
   {
     title: 'Developer Portfolio',
-    description: 'This website. A showcase built with modern web technologies and clean design principles.',
+    description: 'This website! A showcase built with modern web technologies and clean design principles. Oh, did I mention that I built this with Claude Code too?',
     tags: ['Nuxt 4', 'Tailwind CSS', 'TypeScript'],
     image: '/images/preview-portfolio.png',
     demoUrl: '',
     repoUrl: 'https://github.com/zethcode/portfolio-website',
-  },
+  }
 ]
 </script>
 
