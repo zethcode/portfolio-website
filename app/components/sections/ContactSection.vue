@@ -48,8 +48,10 @@ const handleSubmit = async () => {
   }
 
   try {
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: { name: form.name, email: form.email, message: form.message },
+    })
 
     isSuccess.value = true
     form.name = ''

@@ -23,6 +23,7 @@
     "eslint": "^9.39.2",
     "nuxt": "^4.3.0",
     "pinia": "^3.0.4",
+    "resend": "^6.9.1",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   },
