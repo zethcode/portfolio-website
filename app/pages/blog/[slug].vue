@@ -32,11 +32,12 @@ useSeoMeta({
 })
 
 useSchemaOrg([
-  defineBlogPosting({
-    headline: post.value?.title,
-    description: post.value?.description,
-    datePublished: post.value?.date,
-    author: { name: 'Arckie Jadulco', url: 'https://arckiejadulco.dev' },
+  defineArticle({
+    '@type': 'BlogPosting',
+    'headline': post.value?.title,
+    'description': post.value?.description,
+    'datePublished': post.value?.date,
+    'author': { name: 'Arckie Jadulco', url: 'https://arckiejadulco.dev' },
   }),
 ])
 </script>
