@@ -1,7 +1,5 @@
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export default defineEventHandler(async (event) => {
   const { name, email, message } = await readBody(event)
 
@@ -12,7 +10,13 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Invalid email address' })
   }
 
+  const apiKey = process.env.RESEND_API_KEY
+  if (!apiKey) {
+    throw createError({ statusCode: 500, statusMessage: 'Email service not configured' })
+  }
+
   try {
+    const resend = new Resend(apiKey)
     await resend.emails.send({
       from: 'Portfolio Contact <noreply@arckiejadulco.dev>',
       to: 'arckie.jadulco@gmail.com',
