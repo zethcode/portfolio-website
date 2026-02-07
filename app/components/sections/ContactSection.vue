@@ -48,9 +48,6 @@ const handleSubmit = async () => {
   }
 
   try {
-    // Placeholder for form submission
-    console.log('Form submitted:', form)
-
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000))
 
