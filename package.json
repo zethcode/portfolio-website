@@ -17,6 +17,7 @@
     "@nuxt/test-utils": "^3.23.0",
     "@nuxt/ui": "^4.4.0",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/seo": "^3.4.0",
     "@unhead/vue": "^2.1.2",
     "better-sqlite3": "^12.6.2",
     "crossws": "^0.4.4",
