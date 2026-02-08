@@ -79,7 +79,7 @@ const stats = [
             <p>
               My journey spans startup chaos to enterprise scale: from setting up Kubernetes
               clusters and CI/CD workflows at TV Startup, to building Google Maps integrations at Navagis, to developing
-              serverless applications that orchestrate multiple internal and external at Arch Global Services. Each role taught me something different
+              serverless applications that orchestrate multiple internal and external services at Arch Global Services. Each role taught me something different
               about what good software looks like.
             </p>
             <p>

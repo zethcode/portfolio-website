@@ -86,7 +86,7 @@ const props = withDefaults(defineProps<Props>(), {
         {{ title }}
       </h3>
 
-      <p class="mt-2 line-clamp-2 text-sm text-[var(--color-text-secondary)]">
+      <p class="mt-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">
         {{ description }}
       </p>
 
@@ -102,13 +102,13 @@ const props = withDefaults(defineProps<Props>(), {
       </div>
 
       <!-- Mobile Action Links -->
-      <div v-if="demoUrl || repoUrl" class="mt-4 flex gap-3 md:hidden">
+      <div v-if="demoUrl || repoUrl" class="mt-6 flex gap-4 border-t border-[var(--color-border)] pt-4 md:hidden">
         <a
           v-if="demoUrl"
           :href="demoUrl"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent-primary)] transition-colors hover:text-[var(--color-text-primary)]"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent-primary)] transition-colors hover:text-[var(--color-text-primary)] hover:underline"
         >
           <UIcon name="i-lucide-external-link" class="h-4 w-4" />
           Live Demo
@@ -118,7 +118,7 @@ const props = withDefaults(defineProps<Props>(), {
           :href="repoUrl"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text-primary)]"
+          class="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-text-secondary)] transition-colors hover:text-[var(--color-text-primary)] hover:underline"
         >
           <UIcon name="i-lucide-github" class="h-4 w-4" />
           Source

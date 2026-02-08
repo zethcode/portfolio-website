@@ -2,7 +2,7 @@
 const projects = [
   {
     title: 'JTransit',
-    description: 'A navigation app for Cebu jeepney commuters. Helps locals and visitors navigate traditional jeepney routes across the city.',
+    description: 'Built with a small team, conceptualized from a thesis project, JTransit helps commuters navigate Cebu\'s iconic jeepney system. If you\'ve ever stood on a street corner wondering which jeepney to flag down, this is the app for you.',
     tags: ['Mobile App', 'Python', 'Django', 'Navigation', 'Collaboration'],
     image: '/images/preview-jtransit.png',
     demoUrl: 'https://jtransit.github.io/',
@@ -10,7 +10,7 @@ const projects = [
   },
   {
     title: 'Tela At Iba Pa Clothing',
-    description: 'E-commerce platform for a clothing brand. Features product catalog, cart functionality, and checkout process.',
+    description: 'An e-commerce storefront for a made-up clothing brand. Browse collections, add items to your cart, and check out — all the essentials, built from scratch with React and Firebase. This was a personal project built to experiment with React and Firebase.',
     tags: ['React.js', 'Firebase', 'E-commerce'],
     image: '/images/preview-tabp.png',
     demoUrl: 'https://zethcode.github.io/tabp-clothing/',
@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: 'Child Health and Development Journal',
-    description: 'A journaling tool for your childs health and development. Features tools and resources for parents and caregivers to track milestones and progress, and also their healthcare records.',
+    description: 'A journaling tool for parents and caregivers to track their children\'s health milestones, vaccinations, growth progress, and healthcare records — all in one place. Built with Nuxt 4 and Supabase.',
     tags: ['Nuxt 4', 'Supabase', 'Nuxt UI', 'Tailwind CSS'],
     image: '/images/preview-child-health-journal.png',
     demoUrl: 'https://zethcode.github.io/child-health-and-development-journal/',
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: 'Developer Portfolio',
-    description: 'This website! A showcase built with modern web technologies and clean design principles. Oh, did I mention that I built this with Claude Code too?',
+    description: 'This website! Powered by Nuxt 4, Tailwind CSS, and TypeScript with SEO baked in. Oh, did I mention that I built this with the help of Claude Code? It handles everything from structured data to responsive layouts.',
     tags: ['Nuxt 4', 'Tailwind CSS', 'TypeScript'],
     image: '/images/preview-portfolio.png',
     demoUrl: '',

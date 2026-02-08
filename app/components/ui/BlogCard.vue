@@ -45,7 +45,7 @@ const formattedDate = computed(() => {
       </h3>
 
       <!-- Description -->
-      <p class="mt-2 line-clamp-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">
+      <p class="mt-2 text-sm leading-relaxed text-[var(--color-text-secondary)]">
         {{ description }}
       </p>
 

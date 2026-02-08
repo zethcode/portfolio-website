@@ -17,7 +17,7 @@ const { data: posts } = await useAsyncData('blog-posts', () =>
       <!-- Back Link -->
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent-primary)]"
+        class="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-accent-primary)] mt-6"
       >
         <UIcon name="i-lucide-arrow-left" class="h-4 w-4" />
         Back to home
