@@ -92,8 +92,18 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'cloudflare-pages',
-    alias: {
-      '@react-email/render': 'unenv/dist/runtime/mock/empty',
+    rollupConfig: {
+      plugins: [
+        {
+          name: 'mock-react-email',
+          resolveId(id: string) {
+            if (id === '@react-email/render') return id
+          },
+          load(id: string) {
+            if (id === '@react-email/render') return 'export default {}'
+          },
+        },
+      ],
     },
   },
 
