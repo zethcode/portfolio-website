@@ -90,6 +90,10 @@ export default defineNuxtConfig({
     },
   },
 
+  image: {
+    provider: 'none',
+  },
+
   nitro: {
     preset: 'cloudflare-pages',
     rollupConfig: {
