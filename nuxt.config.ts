@@ -93,7 +93,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'cloudflare-pages',
     alias: {
-      '@react-email/render': 'unenv/runtime/mock/empty',
+      '@react-email/render': 'unenv/dist/runtime/mock/empty',
     },
   },
 
