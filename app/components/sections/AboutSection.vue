@@ -16,17 +16,11 @@ const stats = [
           <div
             class="relative mx-auto aspect-square max-w-[280px] overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] sm:mx-0 sm:max-w-none"
           >
-            <div class="flex h-full w-full justify-center items-start">
-              <UIcon
-                name="i-lucide-user"
-                class="h-24 w-24 text-[var(--color-text-muted)]"
-              />
-              <NuxtImg
-                src="/images/profile-cowboy-hat-1.jpg"
-                alt="Profile Picture"
-                class="rounded"
-              />
-            </div>
+            <NuxtImg
+              src="/images/profile-cowboy-hat-1.jpg"
+              alt="Arckie Jadulco"
+              class="h-full w-full object-cover rounded-2xl"
+            />
 
             <!-- Decorative Frame -->
             <div
@@ -68,7 +62,7 @@ const stats = [
             <p>
               Expertise isn't a summit to reach; it's a horizon that recedes as you approach.
               The craft demands perpetual refinement, and I've made peace with that. As a matter of fact,
-              I've come to prefer it. I am based in Cebu, Philippines, I've built my career on
+              I've come to prefer it. Based in Cebu, Philippines, I've built my career on
               the belief that the best engineers stay curious, not comfortable, constantly seeking discomfort.
             </p>
             <p>

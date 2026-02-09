@@ -86,15 +86,14 @@ onUnmounted(() => {
       <div class="mt-6 flex h-10 items-center justify-center">
         <span class="font-mono text-xl text-[var(--color-accent-primary)] md:text-2xl">
           {{ displayedRole }}<span
-            class="ml-0.5 inline-block w-0.5 animate-[blink_1s_step-end_infinite] bg-[var(--color-accent-primary)]"
-            :class="{ 'h-6': true }"
+            class="ml-0.5 inline-block h-6 w-0.5 animate-[blink_1s_step-end_infinite] bg-[var(--color-accent-primary)]"
           />
         </span>
       </div>
 
       <!-- Tagline -->
       <p class="mx-auto mt-8 max-w-2xl text-body md:text-body-lg">
-        A Software Engineer with expertise on building web applications, backend systems, and infrastructure work.
+        A Software Engineer with expertise in building web applications, backend systems, and infrastructure work.
         From startup environments to enterprise solutions. Based in Cebu, Philippines.
       </p>
 

@@ -9,7 +9,7 @@ const socialLinks = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/arckie-jadulco',
+    href: 'https://www.linkedin.com/in/arckie-jadulco/',
     icon: 'i-lucide-linkedin',
   },
 ]

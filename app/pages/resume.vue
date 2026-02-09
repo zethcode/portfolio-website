@@ -41,7 +41,7 @@ const handlePrint = () => {
         <section class="resume-section">
           <h2>SUMMARY</h2>
           <p>
-            Senior Software Engineer with 6+ years of experience building scalable backend systems
+            Senior Software Engineer with 7+ years of experience building scalable backend systems
             and full-stack applications. Expertise in Python, C#/.NET, and cloud infrastructure
             (Azure, GCP, Oracle Cloud). Track record of delivering production systems from startup
             MVPs to enterprise-scale platforms. Strong foundation in DevOps practices, database

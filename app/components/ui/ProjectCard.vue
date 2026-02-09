@@ -6,30 +6,19 @@ interface Props {
   image?: string
   demoUrl?: string
   repoUrl?: string
-  featured?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
   image: '',
   demoUrl: '',
   repoUrl: '',
-  featured: false,
 })
 </script>
 
 <template>
   <article
     class="group relative overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-secondary)] transition-all duration-300 hover:border-[var(--color-accent-primary)] hover:shadow-[var(--shadow-soft)]"
-    :class="{ 'md:col-span-2': featured }"
   >
-    <!-- Featured Badge -->
-    <div
-      v-if="featured"
-      class="absolute right-4 top-4 z-10 rounded-full bg-[var(--color-accent-primary)] px-3 py-1 text-xs font-semibold text-[var(--color-bg-primary)]"
-    >
-      Featured
-    </div>
-
     <!-- Image Area -->
     <div
       class="relative aspect-video overflow-hidden bg-[var(--color-bg-tertiary)]"

@@ -144,15 +144,15 @@
 @media (min-width: 640px) {
   :root {
     --container-padding: 1.5rem;
-    --section-pt: 6rem;
-    --section-pb: 6rem;
+    --section-pt: 5rem;
+    --section-pb: 5rem;
   }
 }
 
 @media (min-width: 768px) {
   :root {
-    --section-pt: 4rem;
-    --section-pb: 4rem;
+    --section-pt: 6rem;
+    --section-pb: 6rem;
   }
 }
 

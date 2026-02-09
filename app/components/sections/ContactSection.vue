@@ -167,6 +167,7 @@ const handleSubmit = async () => {
               v-model="form.name"
               type="text"
               placeholder="John Doe"
+              autocomplete="name"
               class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-primary)] px-4 py-3 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] transition-colors focus:border-[var(--color-accent-primary)] focus:outline-none"
             />
           </div>
@@ -184,6 +185,7 @@ const handleSubmit = async () => {
               v-model="form.email"
               type="email"
               placeholder="john@example.com"
+              autocomplete="email"
               class="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-primary)] px-4 py-3 text-[var(--color-text-primary)] placeholder-[var(--color-text-muted)] transition-colors focus:border-[var(--color-accent-primary)] focus:outline-none"
             />
           </div>

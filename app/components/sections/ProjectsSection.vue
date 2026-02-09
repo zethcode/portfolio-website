@@ -29,7 +29,7 @@ const projects = [
     description: 'This website! Powered by Nuxt 4, Tailwind CSS, and TypeScript with SEO baked in. Oh, did I mention that I built this with the help of Claude Code? It handles everything from structured data to responsive layouts.',
     tags: ['Nuxt 4', 'Tailwind CSS', 'TypeScript'],
     image: '/images/preview-portfolio.png',
-    demoUrl: '',
+    demoUrl: 'https://arckiejadulco.dev',
     repoUrl: 'https://github.com/zethcode/portfolio-website',
   }
 ]
