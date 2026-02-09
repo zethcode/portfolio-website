@@ -90,6 +90,10 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    preset: 'cloudflare-pages',
+  },
+
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
 })
