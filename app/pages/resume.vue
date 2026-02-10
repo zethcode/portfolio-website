@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // SEO
 useSeoMeta({
-  title: 'Resume - Arckie Zeth Jadulco',
+  title: 'Resume - Arckie Jadulco',
   description: 'Senior Software Engineer resume',
   robots: 'noindex', // Don't index resume page
 })
@@ -27,7 +27,7 @@ const handlePrint = () => {
       <section class="page">
         <!-- Header -->
         <header class="resume-header">
-          <h1>ARCKIE ZETH JADULCO</h1>
+          <h1>ARCKIE JADULCO</h1>
           <p class="title">Senior Software Engineer</p>
           <div class="contact-row">
             <span>arckie.jadulco@gmail.com</span>
