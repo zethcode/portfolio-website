@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     identity: {
       type: 'Person',
       name: 'Arckie Jadulco',
-      alternateName: 'Arckie Zeth Jadulco',
+      alternateName: 'Arckie Jadulco',
       url: 'https://arckiejadulco.dev',
       image: 'https://arckiejadulco.dev/images/profile-cowboy-hat-1.jpg',
       jobTitle: 'Senior Software Engineer',
@@ -99,10 +99,6 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'cloudflare-pages',
-    cloudflare: {
-      deployConfig: true,
-      nodeCompat: true,
-    },
     rollupConfig: {
       plugins: [
         {
