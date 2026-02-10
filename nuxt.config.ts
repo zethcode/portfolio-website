@@ -99,6 +99,10 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'cloudflare-pages',
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true,
+    },
     rollupConfig: {
       plugins: [
         {
