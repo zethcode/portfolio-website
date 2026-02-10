@@ -93,6 +93,10 @@ export default defineNuxtConfig({
     provider: 'none',
   },
 
+  runtimeConfig: {
+    resendApiKey: '',
+  },
+
   nitro: {
     preset: 'cloudflare-pages',
     rollupConfig: {
