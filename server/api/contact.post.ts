@@ -1,5 +1,3 @@
-import { Resend } from 'resend'
-
 export default defineEventHandler(async (event) => {
   const { name, email, message } = await readBody(event)
 
@@ -10,20 +8,32 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Invalid email address' })
   }
 
-  const { resendApiKey } = useRuntimeConfig()
-  if (!resendApiKey) {
+  const apiKey = useRuntimeConfig(event).resendApiKey || process.env.NUXT_RESEND_API_KEY
+  if (!apiKey) {
     throw createError({ statusCode: 500, statusMessage: 'Email service not configured' })
   }
 
   try {
-    const resend = new Resend(resendApiKey)
-    await resend.emails.send({
-      from: 'Portfolio Contact <noreply@arckiejadulco.dev>',
-      to: 'arckie.jadulco@gmail.com',
-      replyTo: email,
-      subject: `Portfolio Contact: ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+    const response = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: 'Portfolio Contact <noreply@arckiejadulco.dev>',
+        to: ['arckie.jadulco@gmail.com'],
+        reply_to: email,
+        subject: `Portfolio Contact: ${name}`,
+        text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      }),
     })
+
+    if (!response.ok) {
+      const error = await response.json()
+      throw new Error(error.message || 'Failed to send email')
+    }
+
     return { success: true }
   } catch {
     throw createError({ statusCode: 500, statusMessage: 'Failed to send message' })

@@ -6,7 +6,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev --host 0.0.0.0",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "wrangler-deploy": "npx wrangler pages deploy dist"
   },
   "dependencies": {
     "@nuxt/a11y": "^1.0.0-alpha.1",
@@ -21,7 +22,6 @@
     "better-sqlite3": "^12.6.2",
     "eslint": "^9.39.2",
     "nuxt": "^4.3.0",
-    "resend": "^6.9.1",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   },

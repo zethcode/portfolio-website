@@ -102,15 +102,28 @@ export default defineNuxtConfig({
     rollupConfig: {
       plugins: [
         {
-          name: 'mock-react-email',
+          name: 'native-node-process',
           resolveId(id: string) {
+            if (id.includes('unenv') && id.includes('process')) {
+              return { id: '\0native-process', moduleSideEffects: false }
+            }
             if (id === '@react-email/render') return id
           },
           load(id: string) {
+            if (id === '\0native-process') {
+              return `
+                import process from 'node:process';
+                export default process;
+                export const { env, argv, argv0, version, versions, pid, ppid, platform, arch, release,
+                  cwd, chdir, exit, exitCode, stdout, stderr, stdin, hrtime, nextTick,
+                  on, off, emit, addListener, removeListener, listeners } = process;
+              `
+            }
             if (id === '@react-email/render') return 'export default {}'
           },
         },
       ],
+      external: ['node:process'],
     },
   },
 
