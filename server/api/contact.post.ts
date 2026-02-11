@@ -8,7 +8,11 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Invalid email address' })
   }
 
-  const apiKey = useRuntimeConfig(event).resendApiKey || process.env.NUXT_RESEND_API_KEY
+  const cfEnv = event.context.cloudflare?.env as Record<string, string> | undefined
+  const apiKey = useRuntimeConfig(event).resendApiKey
+    || cfEnv?.NUXT_RESEND_API_KEY
+    || cfEnv?.RESEND_API_KEY
+    || process.env.NUXT_RESEND_API_KEY
   if (!apiKey) {
     throw createError({ statusCode: 500, statusMessage: 'Email service not configured' })
   }
